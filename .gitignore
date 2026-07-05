@@ -1,25 +1,25 @@
 .env
 __pycache__/
 *.pyc
-chroma_db/
-bm25_index.json
-interview_engine.db
-interview_engine.db-shm
-interview_engine.db-wal
-rag_api.db
-rag_api.db-shm
-rag_api.db-wal
 .venv/
 .pytest_cache/
 .DS_Store
-*.exe
-*.log
+
+# 运行时数据
+chroma_db/
+bm25_index.json
+*.db
+*.db-shm
+*.db-wal
+data/
+
+# Docker / 部署
+deploy.tar.gz
+cloudflared.exe
+
+# 构建产物
 dist/
 build/
 *.egg-info/
-
-# Docker / 运行时数据
-data/
-deploy.tar.gz
-*.db-shm
-*.db-wal
+*.exe
+*.log
